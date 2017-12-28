@@ -1,6 +1,6 @@
-# Site navigation links
-
-- title:
-  url:
-  excerpt:
-  image:
+- title: Home
+  url: /index.html
+- title: Over Ons
+  url: /over.html
+- title: Contact
+  url: /contact.html
