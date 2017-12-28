@@ -1,5 +1,15 @@
-<nav class="navbar fixed-bottom navbar-light bg-light">
-{%- if site.show-style-guide %}
-    <a href="{{ site.baseurl }}{% link style-guide/index.md %}" class="btn">Style Guide</a>
-{%- endif %}
-</nav>
+<footer role="contentinfo" id="site-footer">
+        <nav role="navigation" class="menu bottom-menu">
+            <ul class="menu-item">
+            {% for link in site.data.footer %}
+          {% if link.url contains 'http' %}
+            {% assign domain = '' %}
+            {% else %}
+            {% assign domain = site.url %}
+          {% endif %}
+                <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+            {% endfor %}
+            </ul>
+        </nav><!-- /.bottom-menu -->
+        <p class="copyright">&#169; {{ site.time | date: '%Y' }} Naomi Zaki - GDM Gent</p>
+    </footer>
