@@ -24,16 +24,7 @@ gems:
   - jekyll-feed
 
 
-# Site owner
-owner: Naomi Zaki 
-  name: naomizaki
-  email:
-  twitter:
-  google:
-    ad-client:
-    ad-slot:
-  bio:
-  disqus-shortname:
+
 
 
 include:
